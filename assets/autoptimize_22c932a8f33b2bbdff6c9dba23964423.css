@@ -5309,23 +5309,24 @@ div.wpcf7-mail-sent-ok {
 .your-stage .ui-tabs__content-item.tab-front-page {
   display: none;
 }
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .your-stage .ui-tabs__content-item.tab-front-page.js-active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-}
-.ui-tabs__content-item.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  animation: animate 0.3s;
 }
 
 .your-stage__button {
